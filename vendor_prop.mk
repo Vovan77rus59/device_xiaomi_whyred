@@ -187,8 +187,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #Expose aux camera for below packages
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi \
-    camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android
+    vendor.camera.aux.packagelist=com.android.camera,com.google.android.GoogleCamera,org.lineageos.snap \
+    persist.camera.privapp.list=com.android.camera,com.google.android.GoogleCamera,org.lineageos.snap \
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.facebook.katana,com.instagram.android,com.snapchat.android
 
 #disable UBWC for camera
 PRODUCT_PROPERTY_OVERRIDES += \
