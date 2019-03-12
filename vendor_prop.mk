@@ -189,8 +189,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.aux.packagelist=com.android.camera,com.google.android.GoogleCamera,org.lineageos.snap \
     persist.camera.privapp.list=com.android.camera,com.google.android.GoogleCamera,org.lineageos.snap \
-    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner \
-    vendor.camera.hal1.packagelist=com.facebook.katana,com.instagram.android,com.snapchat.android
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner
 
 #disable UBWC for camera
 PRODUCT_PROPERTY_OVERRIDES += \
