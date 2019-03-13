@@ -189,7 +189,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.camera.aux.packagelist=com.android.camera,com.google.android.GoogleCamera,org.lineageos.snap \
     persist.camera.privapp.list=com.android.camera,com.google.android.GoogleCamera,org.lineageos.snap \
-    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner
+    vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner \
+    persist.camera.eis.enable=1 \
+    persist.camera.is_type=4 \
+    persist.camera.HAL3.enabled=1 \
+    persist.camera.max.previewfps=60 \
+    persist.camera.tnr_cds=1 \
+    persist.camera.tnr.video=1 \
+    persist.camera.tnr.preview=1 \
+    persist.camera.tnr.snapshot=1 \
+    persist.camera.llnoise=1 \
+    persist.tnr.process.plates=2 \
+    persist.denoise.process.plates=2 \
+    camera.lowpower.record.enable=1 \
+    vidc.enc.dcvs.extra-buff-count=2
 
 #disable UBWC for camera
 PRODUCT_PROPERTY_OVERRIDES += \
