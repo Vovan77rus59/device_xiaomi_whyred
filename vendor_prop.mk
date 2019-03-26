@@ -188,13 +188,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Expose aux camera for below packages
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=1 \
-    persist.camera.set.afd=4 \
-    persist.camera.xm.green.b=0.96 \
-    persist.camera.xm.green.r=0.97 \
+    persist.camera.eis.enable=1 \
+    persist.camera.is_type=5 \
+    persist.camera.is_mode=5 \
     persist.dualcam.lpm.enable=1 \
+    persist.camera.max.previewfps=60 \
+    persist.camera.tnr_cds=1 \
+    persist.camera.tnr.video=1 \
+    persist.camera.tnr.preview=1 \
+    persist.camera.tnr.snapshot=1 \
+    persist.camera.llnoise=1 \
+    persist.tnr.process.plates=2 \
+    persist.denoise.process.plates=2 \
+    camera.lowpower.record.enable=1 \
+    vidc.enc.dcvs.extra-buff-count=2 \
+    ro.config.calibration_cad=/system/etc/calibration_cad.xml \
     vendor.camera.aux.packagelist=com.android.camera,com.google.android.GoogleCamera,org.lineageos.snap \
     persist.camera.privapp.list=com.android.camera,com.google.android.GoogleCamera,org.lineageos.snap \
-    vidc.enc.dcvs.extra-buff-count=2 \
     vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner
 
 #disable UBWC for camera
